@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "header": "Follow Us",
+    "ColumnLinks": [
+      {
+        "name": "Facebook",
+        "logo": "https://image.similarpng.com/very-thumbnail/2021/01/Black-facebook-icon-on-transparent-background-PNG.png"
+      },
+      {
+        "name": "Instagram",
+        "logo": "https://cdn-icons-png.flaticon.com/512/87/87390.png"
+      },
+      {
+        "name": "Twitter",
+        "logo": "https://www.edigitalagency.com.au/wp-content/uploads/twitter-logo-black-png.png"
+      },
+      {
+        "name": "Linkedin",
+        "logo": "https://cdn-icons-png.flaticon.com/512/61/61109.png"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "header": "Follow Us",
+    "ColumnLinks": [{
+        "name": "Github",
+        "logo": "https://icones.pro/wp-content/uploads/2021/06/symbole-github-noir.png"
+      },{
+        "name": "Medium",
+        "logo": "https://icones.pro/wp-content/uploads/2021/06/symbole-github-noir.png"
+      }]
+  }
+]
