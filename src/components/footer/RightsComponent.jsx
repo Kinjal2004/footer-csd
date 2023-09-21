@@ -7,6 +7,14 @@ const Container = styled.div`
     justify-content: space-between;
     padding-left: 170px;
     padding-right: 100px;
+    @media (max-width: 768px) {
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       padding-left: 0px;
+       padding-right: 0px;
+
+    }
 `
 const RightsContent = styled.div`
   display: flex;

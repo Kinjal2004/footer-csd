@@ -5,9 +5,17 @@ import ContactData from "./static/ContactData.json";
 
 const ContactContainer = styled.div`
   padding: 20px;
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 `;
 const ContactList = styled.div`
   display: flex;
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
 `;
 const ContactImage = styled.img`
   height: 50px;

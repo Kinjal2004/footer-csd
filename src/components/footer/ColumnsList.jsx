@@ -4,10 +4,16 @@ import Columns from "./static/Columns.json";
 import FollowUs from "./static/FollowUs.json";
 
 const ColumnsContainer = styled.div`
-  padding: 10px;
+  margin: 10px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  @media (max-width: 768px) {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 const ColumnContainer = styled.div`
   display: flex;
@@ -31,12 +37,12 @@ const FollowerLinks = styled.div`
   padding-bottom: 10px;
 `;
 const FollowerImages = styled.img`
-    height: 20px;
+  height: 20px;
 `;
 
 const FollowerLine = styled.div`
-    display: flex;
-`
+  display: flex;
+`;
 
 export default function ColumnsList() {
   return (
@@ -57,11 +63,11 @@ export default function ColumnsList() {
             <FollowerContainer key={item.id}>
               <Header>{item.header}</Header>
               {item.ColumnLinks.map((link, index) => (
-              <FollowerLine key={index}>
-                <FollowerImages src={link.logo} alt={link.name} />
-                <FollowerLinks>{link.name}</FollowerLinks>
-              </FollowerLine>
-            ))}
+                <FollowerLine key={index}>
+                  <FollowerImages src={link.logo} alt={link.name} />
+                  <FollowerLinks>{link.name}</FollowerLinks>
+                </FollowerLine>
+              ))}
             </FollowerContainer>
           );
         })}

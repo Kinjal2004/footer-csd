@@ -17,21 +17,37 @@ const FeedBackContainer = styled.div`
     //background-color: greenyellow;
     height: 170px;
     padding: 10px;
+
+    @media (max-width: 768px) {
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+    }
 `
 const LogoContainer = styled.div`
     //background-color: pink;
     width: 60%;
     margin: 5px;
+    @media (max-width: 768px) {
+    width: 100%;
+  }
 `
 const LocationContainer = styled.div`
     //background-color: white;
     width: 35%;
     margin: 5px;
+    @media (max-width: 768px) {
+    width: 100%;
+  }
 `
 const ExternalLinksContainer = styled.div`
     //background-color: purple;
     height: 170px;
     padding: 10px;
+    @media (max-width: 768px) {
+        width: 100vw;
+        height: auto;
+    }
 `
 const HorizontalLine = styled.hr`
   width: 84%;
@@ -41,6 +57,10 @@ const RightsContainer = styled.div`
   height: 50px;
   //background-color: blueviolet;
   padding: 10px;
+  @media (max-width: 768px) {
+        width: 100%;
+        height: auto;
+    }
 `
 
 export default function Footer() {
